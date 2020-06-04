@@ -1,0 +1,28 @@
+body , div , span ,img {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #e8f8f8;
+}
+
+#t-header{
+	height: 200px;
+	background-color: #7FFFD4;
+	font-size: 60px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 30px;
+}
+#t-header img:nth-of-type(1){
+	width: 80px;
+	height: 80px;
+}
+
+#t-header img:nth-child(3){
+	width: 76px;
+	height: 75px;
+}
