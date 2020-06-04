@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 解决浮动塌陷
+			 1.在浮动元素的父级元素中设置
+			 overflow: hidden;
+			 2.在父类元素中添加伪类after
+			 */
+			
+			#father{
+				border: 1px solid #000000;
+			}
+			
+			#father:after{
+				content: '';
+				display: block;
+				clear: both; 
+			}
+			
+			/* 
+			 display: none 隐藏
+			 display: block 将元素设置为块元素 独占一行
+			 display: inline 将元素设置为行内元素 
+			 display: inline-block 将元素设置为既是行内元素又是块元素
+			 */
+			.div1-display{
+				border: 1px solid #008000;
+				display: inline-block ;
+				/* 将该元素向左浮动 */
+				float: left;
+			}
+			.div2-display{
+				border: 1px solid #008000;
+				display: inline-block;
+				/* 将该元素向右浮动 */
+				float: right;
+			}
+			.div3-display{
+				border: 1px solid #008000;
+				display: inline-block;
+			}
+			.div4{
+				border: 1px solid #000000;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<!-- 行内元素可以包含在块级元素中，而块级不能包含在行内  -->
+	</body>
+	
+	<div id="father">
+		<div class="div1-display"><img src="img/a.jpg" alt="" width="500px" height="400px"></div>
+		<div class="div2-display"><img src="img/apic25604.jpg" alt="" width="100px" height="200ox"></div>
+		<div class="div3-display"><img src="img/timg.jpeg" alt="" width="300px" height="500"></div>
+		<div class="div4">
+			浮动一下事实是事实似乎四十是四十是生死时速好似好似说
+		</div>
+	</div>
+</html>

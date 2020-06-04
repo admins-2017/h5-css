@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			/* .test-raduis{
+				width: 200px;
+				height: 200px;
+				background-color: #7FFFD4;
+				border: 5px double #000000; */
+				/* 设置圆角  圆角=边框的宽度 */
+				/* border-radius: 200px; */
+				
+				
+			/* } */
+			
+			/* .test-raduis{ */
+				/* width: 200px; */
+				/* height: 100px; */
+				/* background-color: #7FFFD4; */
+				 /* 绘制半圆 
+				 当高度等于宽度的一半时
+				 */
+				 /* border-radius: 200px 200px 0px 0px; */
+			/* } */
+			
+			.test-raduis{
+				width: 100px;
+				height: 200px;
+				background-color: #7FFFD4;
+				 /* 绘制竖半圆 
+				以高度为参照 
+				 */
+				 border-radius: 200px 0px 0px 200px;
+			}
+			
+			/* 将图片的角设为圆角 */
+			 img{
+				width: 200px;
+				height: 200px;
+				border-radius: 200px;
+			} 
+			
+			.div-shadow{
+				width: 200px;
+				height: 200px;
+				margin-left: 300px;
+				border: 2px solid #000000;
+				border-radius: 200px;
+				
+				/* 设置阴影 
+				box-shadow :x轴偏移 y轴偏移  模糊半径（越大越模糊） 颜色
+				
+				x和y轴  x轴为-10px 则向左偏移10 y轴为-10px 则向上偏移10
+				*/
+				box-shadow: 20px 10px 200px red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test-raduis">
+			
+		</div>
+		
+		<!-- <img src="./img/a.jpg" alt=""> -->
+		
+		<div class="div-shadow">
+			<img src="img/a.jpg" alt="" width="200px" height="200px">
+		</div>
+	</body>
+</html>

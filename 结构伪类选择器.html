@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			/* 伪类选择器 */
+			/* 选中ul第一个子元素 */
+			/* ul li:first-child{
+				background-color: #0000FF;
+			}
+			/* 选中ul最后一个子元素 */
+			/* ul li:last-child{
+				background-color: #E67C7C;
+			} */
+			
+			/* 选中p1 
+			 nth-child(1):定位到父元素，选中第一个p元素
+			 选中当前p元素的父级元素，再选中父级元素的第一p标签，
+			 如果第一个标签不是p标签则不生效
+			 根据顺序来选中
+			 */
+			p:nth-child(1){
+				background-color: #E67C7C;
+			}
+			
+			/* 选中父元素下的第2个p元素 根据类型去选中*/
+			p:nth-of-type(2){
+				background-color: aquamarine;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<p>p1</p>
+		<p>p2</p>
+		<p>p3</p>
+		<p>p7</p>
+		<p>p8</p>
+		<ul>
+			<li>li1</li>
+			<li>li2</li>
+			<li>li3</li>
+		</ul>
+	</body>
+</html>

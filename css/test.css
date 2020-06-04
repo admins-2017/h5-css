@@ -1,0 +1,15 @@
+.class-test>p {
+	color: green;
+	font-size: 20px;
+}
+
+.class-test>p>span {
+	color: yellow;
+	font-size: 30px;
+}
+
+
+.class-test>h1 {
+	color: blue;
+	font-family: "微软雅黑";
+}

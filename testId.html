@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			/* 优先级
+			 id选择器 > 类选择器 > 标签选择器
+			 
+			 id选择器：全局唯一 #id名{}
+			 类选择器：选择所有class属性相同的标签，做到跨标签选择 .class名{}
+			 标签选择器：选中一类标签 标签{}
+			 
+			 */
+			
+			.class-2{
+			 font-family: 楷体;
+			 color: #008000;
+			}
+			
+			#id1{
+			 font-family: 宋体;
+			 color: #0000FF;
+			}
+			
+			h1{
+				color: #FF0000;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="id1" class="class-2">标题1</h1>
+		<h1 class="class-2">标题2</h1>
+		<h1 class="class-2">标题3</h1>
+		<h1>标题4</h1>
+		<h1>标题5</h1>
+	</body>
+</html>

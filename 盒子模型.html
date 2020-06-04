@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			/* margin 外边距 */
+			/* padding 内边距 */
+			/* border 边框 */ 
+			body{
+			 margin: 0px;	
+			}
+			
+			h2{
+				color: white;
+				margin: 0px;
+				text-align: center;
+				line-height: 50px;
+				height: 50px;
+			}
+			
+			.div1{
+				width: 300px;
+				height: 300px;
+				background-color: aquamarine;
+				/* border 粗细 样式 样式 */
+				border: 1px solid red;
+				
+				/* 
+				border-radius : 30px 为所有边框的角设置30px的圆角
+				border-radius : 30px 10 px 为左上 右下 设置30px的圆角
+								           为右上 左下 设置10px的圆角
+				border-radius : 30px 20px 40px 60px 顺时针为 左上 右上 右下 左下设置圆角
+				 */
+				border-radius: 30px 20px 40px 60px;
+				/* 设置盒子在页面中居中
+				
+				
+				 顺时针 上 右 下 左
+				 margin : 0px 1px 2px 3px 
+				 */
+				margin: 30px auto;
+			}
+			
+			#div1-test > form > div {
+				height: 50px;
+			}
+			
+			/* 如何准确找到第一个input */
+			#div1-test > form > div:nth-child(1) > span {
+				margin-left: 13px;
+				line-height: 50px;
+			}
+			
+			#div1-test > form > div:nth-child(1) > input {
+				border: 2px solid #000000;
+				border-radius: 15px;
+				
+				/* 
+				 padding : 10px 上下左右都设置10px
+				 padding : 10px 5px 上下设置10px 左右设置5px
+				 padding : 1px 2px 3px 4px 上右下左顺时针设置
+				 */
+				padding:0px 5px;
+				
+			}
+			
+			/* 盒子的计算方式
+			 外边距（margin）+ 边框（border）+ 内边距 (padding) + 内容宽高 = 盒子大小
+			 */
+			
+			#div1-test > form > div:nth-child(2) > span {
+				margin-left: 29px;
+				line-height: 50px;
+			}
+			#div1-test > form > div:nth-child(2) > input {
+				border: 2px solid #000000;
+				border-radius: 15px;
+			}
+			#div1-test > form > div:nth-child(3) > span {
+				margin-left: 29px;
+				line-height: 50px;
+			}
+			#div1-test > form > div:nth-child(3) > input {
+				border: 2px solid #000000;
+				border-radius: 15px;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+		
+		<div id="div1-test" class="div1">
+			<h2>会员登录</h2>
+			<form action="#" method="get">
+				<div>
+					<span class=" span1">用户名：</span>
+					<input type="text"/>
+				</div>
+				<div>
+					<span class="span2">密码：</span>
+					<input type="text"/>
+				</div>
+				<div>
+					<span class="span3">邮箱：</span>
+					<input type="text"/>
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>

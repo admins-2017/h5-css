@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>超链接标签</title>
+	</head>
+	<body>
+		
+		<h1 id="testTop">顶部</h1>
+		<!-- 链接标签
+			href ： 跳转位置
+			target:表示窗口从哪里打开
+			_blank：打开新的标签页
+			_self：在当前标签页打开
+		-->
+		<a href="index.html" target="_blank">点我跳转首页</a>
+		<a href="https://www.baidu.com" target="_self">点我去百度一下</a>
+		<hr/>
+		<!-- 图片超链接 -->
+		<a href="https://www.baidu.com"><img src="img/cyx.jpeg" alt="陈奕迅" width="300px" height="300px"/></a>
+		
+		
+		<!-- 锚链接
+		 1.需要锚标记
+		 2.跳转到标记 #id名
+		 -->
+		<a href="#testTop">回到顶部</a>
+		<p id="dowm">最后</p>
+		
+		
+		<!-- 功能型链接 
+		邮件链接
+		qq链接
+		-->
+		<a href="mailto:1067905926@qq.com">点击联系我们</a>
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">
+			<img border="0" src="http://wpa.qq.com/pa?p=2::51" alt="你好 请联系我们" title="你好 请联系我们"/></a>
+	</body>
+</html>

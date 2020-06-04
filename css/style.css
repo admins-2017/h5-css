@@ -1,0 +1,84 @@
+body{
+	/* 渐变色 */
+	background-color: #52ACFF;
+	background-image: linear-gradient(90deg, #52ACFF 30%, #af2cff 100%);
+}
+
+body h2 {
+	font-size: 20px;
+	font-weight: bold;
+	text-indent: 2em;
+	/* 块内高度 */
+	line-height: 30px;
+	background : #3cc3ff  url(../img/down.png);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	/* 将背景图定位到指定位置 background-position  */
+	/* 定位到最右边 */
+	/* background-position: right; */
+	
+	/* 定位到指定位置 */
+	background-position: 215px 0px ;
+	
+	height: 30px;
+	
+}
+
+.nav{
+	width: 250px;
+	
+	/* 设置背景图 默认为平铺 repeat */
+	/* background-image: url(../img/a.jpg); */
+	
+	/* 设置背景图的宽高 */
+	background-size: 250px 346px;
+	
+	/* 指定如何重复背景图像 */
+	/* background-repeat:no-repeat; */
+	
+	/* 指定重复背景图水平平铺 */
+	/* background-repeat: repeat-x; */
+	
+	/* 指定重复背景图竖直平铺 */
+	/* background-repeat: repeat-y; */
+}
+
+.ul-test li {
+	/* 行高 */
+	height: 30px;
+	
+	/* 去掉原点 */
+	list-style: none ;
+	
+	text-indent: 1em;
+	
+	
+	/* 集成写法 */
+	/* 背景颜色 图片地址 定位px 平铺方式 */
+	background: red url(../img/left.png)  192px 4px no-repeat;
+	
+	/* background-image: url(../img/left.png); */
+
+	/* background-repeat: no-repeat; */
+	
+	background-size: 15px 15px;
+	
+	/* background-position: 192px 4px; */
+	
+	
+
+	
+}
+
+.ul-test li a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #000;
+}
+
+.ul-test li> a:hover{
+	color: red;
+	/* 鼠标悬停位置的a标签加入下划线 */
+	text-decoration: underline;
+}
+

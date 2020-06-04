@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+		
+		/* 属性选择器*/
+		 
+		 /* 选中含有id的标签 */
+		 /* a[id]{
+			background-color: #0000FF;
+			color: white;
+		 } */
+		 
+		 /* 选中id等于百度的标签 */
+		/* a[id=baidu]{
+			 background-color: #7FFFD4;
+			 color: white;
+		 } */
+		 
+		 /* 选中class属性中包含adds的元素  *= 表示包含 */
+		 a[class*= "adds"]{
+			 background-color: darkblue;
+	
+		 }
+		 </style>
+	</head>
+	<body>
+		
+		<a href="www.baidu.com" id="baidu" class="item adds baidu-class">baidu</a>
+		<a href="www.bilibili.com" id="bili" class="item bili-class">bilibili</a>
+		<a href="www.tengxun.com"  class="item adds tengxun-class">tengxun</a>
+	</body>
+</html>

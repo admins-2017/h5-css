@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定位</title>
+		
+		<style type="text/css">
+			
+			body div a {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#father{
+				border: 1px solid red;
+				width: 330px;
+				height: 330px;
+			}
+			
+			#father div{
+				width: 100px;
+				height: 100px;
+				display: inline-block;
+				background-color: #E67C7C ;
+				text-align: center;
+			}
+			
+			#father a{
+				line-height: 100px;
+				text-decoration: none;
+			}
+			
+			#father div:hover{
+				background-color: blue;
+			}
+			
+			#father div:nth-child(1){
+				/* 相对定位 */
+				/* 开启相对定位 相对与自己的位置进行偏移 原来的位置会被保留 上下左右 */
+				position: relative;
+				top: 10px;
+				left: 10px;
+			}
+			#father div:nth-child(2){
+				position: relative;
+				top: 10px;
+				left: 100px;
+			}
+			#father div:nth-child(3){
+				position: relative;
+				top: 210px;
+				right: 205px;
+			}
+			#father div:nth-child(4){
+				position: relative;
+				top: 100px;
+				left: 205px;
+			}
+			#father div:nth-child(5){
+				position: relative;
+				margin-top: 10px;
+				margin-left: 0px;
+			}
+			
+			/* ------------------绝对定位--------------------------- */
+			
+			#father2{
+				width: 300px;
+				height: 300px;
+				padding: 10px;
+				border: 1px solid #008000;
+				position: relative;
+			}
+			
+			#father2 a{
+				display: block;
+				width: 100px;
+				height: 100px;
+				background-color: #08AEEA;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			#father2 a:hover{
+				font-size: 20px;
+				background-color: #86518b;
+			}
+			
+			#father2 a:nth-of-type(2){
+				/* 开启绝对定位 
+				父类如果设置position:relative 则开启定位的子类相对于父类定位
+				父类如果没有设置position:ralavite 则开启定位的子类相对于浏览器定位  */
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+			
+			#father2 a:nth-of-type(3){
+				/* 开启绝对定位 
+				父类如果设置position:relative 则开启定位的子类相对于父类定位
+				父类如果没有设置position:ralavite 则开启定位的子类相对于浏览器定位  */
+				position: absolute;
+				top: 110px;
+				left: 110px;
+			}
+			
+			#father2 a:nth-of-type(4){
+				/* 开启绝对定位 
+				父类如果设置position:relative 则开启定位的子类相对于父类定位
+				父类如果没有设置position:ralavite 则开启定位的子类相对于浏览器定位  */
+				position: absolute;
+				top: 210px;
+				left: 10px;
+			}
+			
+			#father2 a:nth-of-type(5){
+				/* 开启绝对定位 
+				父类如果设置position:relative 则开启定位的子类相对于父类定位 在父级元素范围内移动
+				父类如果没有设置position:ralavite 则开启定位的子类相对于浏览器定位  */
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+			
+			/* ------------------------------------------------ */
+			/* 固定定位 fixed
+			固定在浏览器的
+			 */
+			/* #father3{ */
+				/* position: fixed; */
+				/* bottom: 10px; */
+				/* right: 10px; */
+			/* } */
+			
+			/* #father3 img{ */
+				/* width: 250px; */
+				/* height: 200px; */
+			/* } */
+			
+			#father3{
+				/* 固定位置 */
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+			}
+			
+			#father3 a{
+				text-decoration: none;
+			}
+			
+			#father3 img{
+				width: 50px;
+				height:50px
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="father">
+			<div>
+				<a href="#">链接1</a>
+			</div>
+			<div>
+				<a href="#">链接2</a>
+			</div>
+			<div>
+				<a href="#">链接3</a>
+			</div>
+			<div>
+				<a href="#">链接4</a>
+			</div>
+			<div>
+				<a href="#">链接5</a>
+			</div>
+		</div>
+		
+		
+		<div id="father2">
+				<a href="#">链接1</a>
+				<a href="#">链接2</a>
+				<a href="#">链接3</a>
+				<a href="#">链接4</a>
+				<a href="#">链接5</a>
+		</div>
+		
+		
+		
+		<img src="./img/a.jpg" alt="">
+		<img src="./img/a.jpg" alt="">
+		
+		<div id="father3">
+			<a href="#father">
+				<img src="img/more.png" alt="">
+			</a>
+		</div>
+	</body>
+</html>
