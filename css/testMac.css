@@ -26,3 +26,9 @@ body{
 	width: 76px;
 	height: 75px;
 }
+
+.userCard{
+	height: 500px;
+	border: 1px solid red;
+	margin-top: 50px;
+}
