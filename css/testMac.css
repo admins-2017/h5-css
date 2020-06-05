@@ -8,7 +8,7 @@ body{
 }
 
 #t-header{
-	height: 200px;
+	height: 130px;
 	background-color: #40d3c9;
 	font-size: 60px;
 	color: white;
@@ -18,19 +18,20 @@ body{
 	padding: 0px 30px;
 }
 #t-header img:nth-of-type(1){
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
 }
 
 #t-header img:nth-child(3){
-	width: 76px;
-	height: 75px;
+	width: 46px;
+	height: 45px;
 }
 
 
 .userCard{
 	height: 440px;
 	margin-top: 40px;
+	position: relative;
 }
 
 .t-card{
@@ -40,7 +41,8 @@ body{
 	height: 350px;
 	width: 820px;
 	border-radius: 30px;
-	background: #08AEEA;
+	background-color: #08AEEA;
+	background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 100%);
 	position: relative;
 }
 
@@ -118,15 +120,33 @@ body{
 
 .address div:nth-of-type(1){
 	padding-left: 30px;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .address div:nth-of-type(2){
 	padding-right: 30px;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .address div:nth-of-type(2) span{
 	color: #08AEEA;
-	font-size: 30px;
+	font-size: 25px;
+}
+
+.t-fire{
+	width: 80px;
+	height: 80px;
+	background-color: #08AEEA;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 65px;
+	right: 80px;
+}
+
+.t-fire img{
+	width: 40px;
+	height: 40px;
 }
